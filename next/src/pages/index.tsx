@@ -1,5 +1,6 @@
 import React from 'react';
 import { GetServerSideProps } from 'next';
+import Head from 'next/head';
 import got from 'got';
 
 type User = { name: string; avatarUrl: string };
@@ -24,9 +25,14 @@ export const getServerSideProps: GetServerSideProps<ServerSideProps> = async con
 
 export default function Index({ user }: ServerSideProps) {
   return (
-    <div className="container">
-      <img src={user.avatarUrl} alt="user-avatar" className="avatar" />
-      <span>{user.name}</span>
-    </div>
+    <>
+      <Head>
+        <title>SSR POC - Next</title>
+      </Head>
+      <div className="container">
+        <img src={user.avatarUrl} alt="user-avatar" className="avatar" />
+        <span>{user.name}</span>
+      </div>
+    </>
   );
 }
