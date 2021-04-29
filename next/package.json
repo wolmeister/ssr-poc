@@ -1,0 +1,23 @@
+{
+  "name": "ejs",
+  "version": "1.0.0",
+  "description": "SSR example using Next",
+  "author": "Victor Wolmeister",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "got": "^11.8.2",
+    "next": "^10.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.1",
+    "@types/react": "^17.0.4",
+    "typescript": "^4.2.4"
+  }
+}
