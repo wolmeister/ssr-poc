@@ -1,0 +1,22 @@
+{
+  "name": "nuxt",
+  "version": "1.0.0",
+  "description": "SSR example using Nuxt",
+  "author": "Victor Wolmeister",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "@nuxt/http": "^0.6.4",
+    "nuxt": "^2.15.4",
+    "serve-static": "^1.14.1"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.4",
+    "@nuxt/typescript-build": "^2.1.0",
+    "typescript": "^4.2.4"
+  }
+}
