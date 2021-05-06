@@ -1,4 +1,4 @@
-# SSR POC - Next
+# SSR POC - Angular Universal
 
 ### Commands:
 
